@@ -94,7 +94,6 @@
                     }
 
                 }
-
                 if (tmax === -1) {
                     tmax = ((ya - yb) * (key[0] - xa) + (xb - xa)
                         * (key[1] - ya)) / ((points_vertex_polygon.get(key)[0] - key[0])
@@ -110,7 +109,6 @@
                     let y0a = (points_vertex_polygon.get(key_tmin)[1] - key_tmin[1]) * tmin + key_tmin[1];
                     let x0b = (points_vertex_polygon.get(key_tmax)[0] - key_tmax[0]) * tmax + key_tmax[0];
                     let y0b = (points_vertex_polygon.get(key_tmax)[1] - key_tmax[1]) * tmax + key_tmax[1];
-
                     line(x0a, y0a, x0b, y0b, "#fff200");
                     line(points_vertex_polygon.get(key_tmin)[0],
                         points_vertex_polygon.get(key_tmin)[1], key_tmin[0], key_tmin[1], "#000");
@@ -118,10 +116,7 @@
                 }
             }
             state = 2;
-
         }
-
-
     });
 
     canvas.addEventListener('contextmenu', function () {
@@ -131,7 +126,6 @@
             state = 2;
         }
     });
-
 
 </script>
 </body>
